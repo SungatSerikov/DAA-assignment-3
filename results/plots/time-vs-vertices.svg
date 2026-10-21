@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img" aria-labelledby="title description" data-x-variable="vertices" data-x-scale="log10" data-y-scale="linear" data-plot-left="105.0" data-plot-top="95.0" data-plot-width="880.0" data-plot-height="420.0" data-y-max-ms="2.0">
+<title id="title">Measured graph algorithm runtime versus vertices</title>
+<desc id="description">Six algorithm and graph scenarios. Points show arithmetic means of five timed calls after ten warmups. The x axis uses a logarithmic scale; the y axis is linear in milliseconds, starting at zero. Straight lines connect measured points. Both graph vertices and edges vary between sizes.</desc>
+<rect width="1100" height="760" fill="#ffffff"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#202c3a">
+<text x="55.000" y="38.000" font-size="26" text-anchor="start">Graph algorithm runtime vs vertices</text>
+<text x="55.000" y="65.000" font-size="14" text-anchor="start">Seed 42 | 10 warmups | mean of 5 complete calls | operation counting excluded</text>
+<line x1="105.000" y1="515.000" x2="985.000" y2="515.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="93.000" y="520.000" font-size="13" text-anchor="end">0</text>
+<line x1="105.000" y1="431.000" x2="985.000" y2="431.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="93.000" y="436.000" font-size="13" text-anchor="end">0.400</text>
+<line x1="105.000" y1="347.000" x2="985.000" y2="347.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="93.000" y="352.000" font-size="13" text-anchor="end">0.800</text>
+<line x1="105.000" y1="263.000" x2="985.000" y2="263.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="93.000" y="268.000" font-size="13" text-anchor="end">1.20</text>
+<line x1="105.000" y1="179.000" x2="985.000" y2="179.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="93.000" y="184.000" font-size="13" text-anchor="end">1.60</text>
+<line x1="105.000" y1="95.000" x2="985.000" y2="95.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="93.000" y="100.000" font-size="13" text-anchor="end">2.00</text>
+<line x1="105.000" y1="95.000" x2="105.000" y2="515.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="105.000" y="542.000" font-size="14" text-anchor="middle">10</text>
+<line x1="545.000" y1="95.000" x2="545.000" y2="515.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="545.000" y="542.000" font-size="14" text-anchor="middle">100</text>
+<line x1="985.000" y1="95.000" x2="985.000" y2="515.000" stroke="#e0e6ed" stroke-width="1.0" stroke-dasharray=""/>
+<text x="985.000" y="542.000" font-size="14" text-anchor="middle">1000</text>
+<line x1="105.000" y1="95.000" x2="105.000" y2="515.000" stroke="#718095" stroke-width="1.5" stroke-dasharray=""/>
+<line x1="105.000" y1="515.000" x2="985.000" y2="515.000" stroke="#718095" stroke-width="1.5" stroke-dasharray=""/>
+<text x="545.000" y="570.000" font-size="16" text-anchor="middle">Vertices (log scale)</text>
+<text x="28" y="305" font-size="16" text-anchor="middle" transform="rotate(-90 28 305)">Mean runtime (ms)</text>
+<polyline fill="none" stroke="#2459a6" stroke-width="2.5" stroke-dasharray="" points="105.000,511.065 545.000,458.758 985.000,237.052 "/>
+<circle class="data-point" cx="105.000" cy="511.065" r="4.5" fill="#2459a6" stroke="#ffffff" stroke-width="1.3" data-algorithm="Kruskal" data-graph-type="connected_undirected" data-vertices="10" data-edges="30" data-average-ns="18740.0"><title>Kruskal / connected undirected: V=10, E=30, mean=0.018740 ms (min=0.017300, max=0.020800)</title></circle>
+<circle class="data-point" cx="545.000" cy="458.758" r="4.5" fill="#2459a6" stroke="#ffffff" stroke-width="1.3" data-algorithm="Kruskal" data-graph-type="connected_undirected" data-vertices="100" data-edges="500" data-average-ns="267820.0"><title>Kruskal / connected undirected: V=100, E=500, mean=0.267820 ms (min=0.208500, max=0.389700)</title></circle>
+<circle class="data-point" cx="985.000" cy="237.052" r="4.5" fill="#2459a6" stroke="#ffffff" stroke-width="1.3" data-algorithm="Kruskal" data-graph-type="connected_undirected" data-vertices="1000" data-edges="5000" data-average-ns="1323560.0"><title>Kruskal / connected undirected: V=1000, E=5000, mean=1.323560 ms (min=1.243100, max=1.418600)</title></circle>
+<line x1="85.000" y1="605.000" x2="117.000" y2="605.000" stroke="#2459a6" stroke-width="2.5" stroke-dasharray=""/>
+<text x="128.000" y="610.000" font-size="14" text-anchor="start">Kruskal / connected undirected</text>
+<polyline fill="none" stroke="#d46918" stroke-width="2.5" stroke-dasharray="9 4" points="105.000,505.185 545.000,469.623 985.000,311.607 "/>
+<circle class="data-point" cx="105.000" cy="505.185" r="4.5" fill="#d46918" stroke="#ffffff" stroke-width="1.3" data-algorithm="Prim" data-graph-type="connected_undirected" data-vertices="10" data-edges="30" data-average-ns="46740.0"><title>Prim / connected undirected: V=10, E=30, mean=0.046740 ms (min=0.040200, max=0.057400)</title></circle>
+<circle class="data-point" cx="545.000" cy="469.623" r="4.5" fill="#d46918" stroke="#ffffff" stroke-width="1.3" data-algorithm="Prim" data-graph-type="connected_undirected" data-vertices="100" data-edges="500" data-average-ns="216080.0"><title>Prim / connected undirected: V=100, E=500, mean=0.216080 ms (min=0.212300, max=0.218100)</title></circle>
+<circle class="data-point" cx="985.000" cy="311.607" r="4.5" fill="#d46918" stroke="#ffffff" stroke-width="1.3" data-algorithm="Prim" data-graph-type="connected_undirected" data-vertices="1000" data-edges="5000" data-average-ns="968540.0"><title>Prim / connected undirected: V=1000, E=5000, mean=0.968540 ms (min=0.924400, max=1.037300)</title></circle>
+<line x1="565.000" y1="605.000" x2="597.000" y2="605.000" stroke="#d46918" stroke-width="2.5" stroke-dasharray="9 4"/>
+<text x="608.000" y="610.000" font-size="14" text-anchor="start">Prim / connected undirected</text>
+<polyline fill="none" stroke="#18816a" stroke-width="2.5" stroke-dasharray="3 4" points="105.000,506.289 545.000,491.963 985.000,463.815 "/>
+<circle class="data-point" cx="105.000" cy="506.289" r="4.5" fill="#18816a" stroke="#ffffff" stroke-width="1.3" data-algorithm="TopologicalSort" data-graph-type="dag" data-vertices="10" data-edges="30" data-average-ns="41480.0"><title>TopologicalSort / DAG: V=10, E=30, mean=0.041480 ms (min=0.011700, max=0.148800)</title></circle>
+<circle class="data-point" cx="545.000" cy="491.963" r="4.5" fill="#18816a" stroke="#ffffff" stroke-width="1.3" data-algorithm="TopologicalSort" data-graph-type="dag" data-vertices="100" data-edges="500" data-average-ns="109700.0"><title>TopologicalSort / DAG: V=100, E=500, mean=0.109700 ms (min=0.105300, max=0.116400)</title></circle>
+<circle class="data-point" cx="985.000" cy="463.815" r="4.5" fill="#18816a" stroke="#ffffff" stroke-width="1.3" data-algorithm="TopologicalSort" data-graph-type="dag" data-vertices="1000" data-edges="5000" data-average-ns="243740.0"><title>TopologicalSort / DAG: V=1000, E=5000, mean=0.243740 ms (min=0.199500, max=0.374000)</title></circle>
+<line x1="85.000" y1="634.000" x2="117.000" y2="634.000" stroke="#18816a" stroke-width="2.5" stroke-dasharray="3 4"/>
+<text x="128.000" y="639.000" font-size="14" text-anchor="start">TopologicalSort / DAG</text>
+<polyline fill="none" stroke="#9346a2" stroke-width="2.5" stroke-dasharray="11 3 2 3" points="105.000,514.483 545.000,507.591 985.000,505.718 "/>
+<circle class="data-point" cx="105.000" cy="514.483" r="4.5" fill="#9346a2" stroke="#ffffff" stroke-width="1.3" data-algorithm="TopologicalSort" data-graph-type="directed_cyclic" data-vertices="10" data-edges="30" data-average-ns="2460.0"><title>TopologicalSort / directed cyclic: V=10, E=30, mean=0.002460 ms (min=0.002400, max=0.002600)</title></circle>
+<circle class="data-point" cx="545.000" cy="507.591" r="4.5" fill="#9346a2" stroke="#ffffff" stroke-width="1.3" data-algorithm="TopologicalSort" data-graph-type="directed_cyclic" data-vertices="100" data-edges="500" data-average-ns="35280.0"><title>TopologicalSort / directed cyclic: V=100, E=500, mean=0.035280 ms (min=0.034800, max=0.035600)</title></circle>
+<circle class="data-point" cx="985.000" cy="505.718" r="4.5" fill="#9346a2" stroke="#ffffff" stroke-width="1.3" data-algorithm="TopologicalSort" data-graph-type="directed_cyclic" data-vertices="1000" data-edges="5000" data-average-ns="44200.0"><title>TopologicalSort / directed cyclic: V=1000, E=5000, mean=0.044200 ms (min=0.042400, max=0.046400)</title></circle>
+<line x1="565.000" y1="634.000" x2="597.000" y2="634.000" stroke="#9346a2" stroke-width="2.5" stroke-dasharray="11 3 2 3"/>
+<text x="608.000" y="639.000" font-size="14" text-anchor="start">TopologicalSort / directed cyclic</text>
+<polyline fill="none" stroke="#c73c4a" stroke-width="2.5" stroke-dasharray="7 3 2 3" points="105.000,511.854 545.000,498.507 985.000,363.204 "/>
+<circle class="data-point" cx="105.000" cy="511.854" r="4.5" fill="#c73c4a" stroke="#ffffff" stroke-width="1.3" data-algorithm="Kosaraju" data-graph-type="directed_cyclic" data-vertices="10" data-edges="30" data-average-ns="14980.0"><title>Kosaraju / directed cyclic: V=10, E=30, mean=0.014980 ms (min=0.013200, max=0.019200)</title></circle>
+<circle class="data-point" cx="545.000" cy="498.507" r="4.5" fill="#c73c4a" stroke="#ffffff" stroke-width="1.3" data-algorithm="Kosaraju" data-graph-type="directed_cyclic" data-vertices="100" data-edges="500" data-average-ns="78540.0"><title>Kosaraju / directed cyclic: V=100, E=500, mean=0.078540 ms (min=0.074600, max=0.087900)</title></circle>
+<circle class="data-point" cx="985.000" cy="363.204" r="4.5" fill="#c73c4a" stroke="#ffffff" stroke-width="1.3" data-algorithm="Kosaraju" data-graph-type="directed_cyclic" data-vertices="1000" data-edges="5000" data-average-ns="722840.0"><title>Kosaraju / directed cyclic: V=1000, E=5000, mean=0.722840 ms (min=0.556000, max=0.916700)</title></circle>
+<line x1="85.000" y1="663.000" x2="117.000" y2="663.000" stroke="#c73c4a" stroke-width="2.5" stroke-dasharray="7 3 2 3"/>
+<text x="128.000" y="668.000" font-size="14" text-anchor="start">Kosaraju / directed cyclic</text>
+<polyline fill="none" stroke="#63702a" stroke-width="2.5" stroke-dasharray="2 3" points="105.000,508.952 545.000,493.450 985.000,376.547 "/>
+<circle class="data-point" cx="105.000" cy="508.952" r="4.5" fill="#63702a" stroke="#ffffff" stroke-width="1.3" data-algorithm="Dijkstra" data-graph-type="directed_cyclic" data-vertices="10" data-edges="30" data-average-ns="28800.0"><title>Dijkstra / directed cyclic: V=10, E=30, mean=0.028800 ms (min=0.017200, max=0.057600)</title></circle>
+<circle class="data-point" cx="545.000" cy="493.450" r="4.5" fill="#63702a" stroke="#ffffff" stroke-width="1.3" data-algorithm="Dijkstra" data-graph-type="directed_cyclic" data-vertices="100" data-edges="500" data-average-ns="102620.0"><title>Dijkstra / directed cyclic: V=100, E=500, mean=0.102620 ms (min=0.099800, max=0.105400)</title></circle>
+<circle class="data-point" cx="985.000" cy="376.547" r="4.5" fill="#63702a" stroke="#ffffff" stroke-width="1.3" data-algorithm="Dijkstra" data-graph-type="directed_cyclic" data-vertices="1000" data-edges="5000" data-average-ns="659300.0"><title>Dijkstra / directed cyclic: V=1000, E=5000, mean=0.659300 ms (min=0.562700, max=0.810900)</title></circle>
+<line x1="565.000" y1="663.000" x2="597.000" y2="663.000" stroke="#63702a" stroke-width="2.5" stroke-dasharray="2 3"/>
+<text x="608.000" y="668.000" font-size="14" text-anchor="start">Dijkstra / directed cyclic</text>
+<text x="55.000" y="712.000" font-size="13" text-anchor="start">Measured sizes: (V, E) = (10, 30), (100, 500), (1000, 5000). Both dimensions change together.</text>
+<text x="55.000" y="734.000" font-size="13" text-anchor="start">Points are measured means; straight lines guide the eye. Raw samples and ranges are in tables/. No samples removed.</text>
+</g>
+</svg>
